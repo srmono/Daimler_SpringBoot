@@ -1,0 +1,2 @@
+INDEX VERSION 1.131+I:\Training\Just_Compile\Daimler\phase2\spring_stack\resources\fleetsystem\.metadata\.plugins\org.eclipse.jdt.core
+4120571384.index
