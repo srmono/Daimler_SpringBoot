@@ -1,38 +1,26 @@
-package com.daimler.fms.entity;
+package com.daimler.fms.dto;
 
-import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Entity
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
-//@Table(name ="Trucks")
-public class Truck {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+//@Data
+//@AllArgsConstructor
+//@NoArgsConstructor
+public class TruckDTO {
     private Long id;
-    //@Column(name = "modal")
     private String model;
-    private Status status;
+    private String status;
     private String details;
 
-    public enum Status{
-        ACTIVE,
-        IN_MAINTENANCE,
-        RETIRED
-    }
-
-    public Truck(Long id, String model, Status status, String details) {
+    public TruckDTO(Long id, String model, String status, String details) {
         this.id = id;
         this.model = model;
         this.status = status;
         this.details = details;
     }
 
-    public Truck() {
+    public TruckDTO() {
     }
 
     public Long getId() {
@@ -51,11 +39,11 @@ public class Truck {
         this.model = model;
     }
 
-    public Status getStatus() {
+    public String getStatus() {
         return status;
     }
 
-    public void setStatus(Status status) {
+    public void setStatus(String status) {
         this.status = status;
     }
 
