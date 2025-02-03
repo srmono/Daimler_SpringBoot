@@ -1,0 +1,10 @@
+{
+    "trucks": [
+        {"id": 1, "model": "volvo", "status": "available", "details": "Heavy Duty"},
+        {"id": 2, "model": "Scania", "status": "In use", "details": "Long Haul"}
+    ],
+    "users": [
+        {"id": 1, "username": "admin", "password": "admin123", "role": "admin" },
+        {"id": 2, "username": "user", "password": "user123", "role": "user" }
+    ]
+}
