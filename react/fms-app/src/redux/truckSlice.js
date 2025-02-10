@@ -69,11 +69,14 @@ const truckSlice = createSlice({
 });
 
 // Selectors
-export const { selectAll: selectAllTrucks, selectById: selectTruckById } = trucksAdapter.getSelectors((state) => state.trucks);
+export const { 
+  selectAll: selectAllTrucks, selectById: selectTruckById 
+} = trucksAdapter.getSelectors((state) => state.trucks);
 
 export default truckSlice.reducer;
 
 
+// ----
 
 
 // import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";

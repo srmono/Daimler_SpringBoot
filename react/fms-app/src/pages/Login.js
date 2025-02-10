@@ -41,7 +41,7 @@ const Login = () => {
     // Validate credentials using a helper function
     if (validateCredentials(username, password)) {
       dispatch(loginAccess({ username }));
-      navigate("/dashboard");
+      navigate("/trucks");
     } else {
       setError("Invalid credentials. Please try again.");
     }
